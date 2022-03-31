@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images-js/js_logo.jpg"  type="image/x-icon">
+    <title>Java Script</title>
+    <style>
+     *{
+       box-sizing: border-box;
+      }
+     #div2{
+      background-color: rgb(171, 226, 126);
+      height: 40px;
+      }
+     #row,#div1{
+       display: flex;
+       flex-wrap: wrap;
+      }
+    #row div,#div1 div{
+     background-color: rgb(219, 226, 235);
+     width: 16.666666%;
+     border: 1px dotted;
+    }
+   h1,h2,h3{
+    color: blue;
+   }
+   #Progress_Status {
+    width: 50%;
+    background-color: #ddd;
+   }
+
+  #myprogressBar {
+   width: 2%;
+   height: 20px;
+   background-color: #4CAF50;
+   }
+    </style>
+    
+</head>
+<body style="background-color: rgb(245, 238, 238);">
+    <h1>Java script</h1>
+    <h3>Duplicate HTML container</h3>
+    <div id="div2"></div>
+<h2>Table</h2>
+<div id="row">
+    <div style="width: 33.33%;"><b>Div Container</b>
+        <div>div1.1 container</div>
+        <div>div1.2 container</div>
+        <div>div1.3 container</div>
+    </div>
+    <div style="width: 33.33%;"><b>Div Container</b>
+        <div>div2.1 container</div>
+        <div>div2.2 container</div>
+        <div>div2.3 container</div>
+    </div>
+    <div style="width: 33.33%;"><b>Div Container</b>
+        <div>div3.1 container</div>
+        <div>div3.2 container</div>
+        <div>div3.3 container</div>
+    </div>
+    <div style="width: 33.33%;"><b>Div Container</b>
+        <div>div4.1 container</div>
+        <div>div4.2 container</div>
+        <div>div4.3 container</div>
+    </div>
+    <div style="width: 33.33%;"><b>Div Container</b>
+        <div>div5.1 container</div>
+        <div>div5.2 container</div>
+        <div>div5.3 container</div>
+    </div>
+    <div style="width: 33.33%;"><b>Div Container</b>
+        <div>div6.1 container</div>
+        <div>div6.2 container</div>
+        <div>div6.3 container</div>
+    </div>
+</div>
+
+<div id="div1"></div>
+<p><input type="button" value="Generate Columns" id="btnGenerateColumns"></p>
+
+<!--palindrome-->
+<h3>palindrome</h3>
+<div class="palin">  
+    <label> Enter any string : </label>   
+    <input type "text" id= "pa"> <br> <br>  
+    <label> Resultant string : </label>   
+     <input type = "text" id = "pa2" > </b> <br>   
+    <input type= "submit" onclick = "palindrome()" > <br>   
+</div><br>  
+
+<!--progress bar-->
+<h2>progress bar</h2>
+<div id="Progress_Status">
+  <div id="myprogressBar">
+
+  </div>
+</div><br>
+<button onclick="update()">Start Download</button> <br>
+
+<!--rotate a string-->  
+<p id = 'rotate'></p>
+
+
+<script>
+    document.write("Table using while loop method");
+    window.alert("This is Alert, Hi i am Rushi here");
+</script>
+<script src="style1.js"></script>
+</body>
+</html>
