@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refresh Page</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        h2{
+            color: blue;
+            font-size: 35px;
+        }
+        input{
+            width: 40%;
+            height: 40px;
+        }
+        button{
+            width: 40%;
+            height: 40px;
+            font-size: 20px;
+        }
+        body{
+            background-color: rgb(218, 151, 223);
+        }
+    </style>
+</head>
+<body id="b1">
+    <h2 id="h2">Refresh, Auto Refresh and Redirect the web page</h2>
+    <input id="i1" placeholder="Assign Time To Refresh the Webpage"><br><br>
+    <button onclick="Refresh()"> click </button>
+
+
+    <script>
+        function Refresh ()
+        {
+        time=document.getElementById("i1").value;
+        time=parseInt(time);
+        //time=3;
+        setTimeout("location.reload(true)",time*1000);
+        console.log(window.location.href);
+        if(setTimeout("location.reload(true)",time*1000));
+        // if(setTimeout("location.assign('https://www.google.com/search?q=w3schools&rlz=1C1CHBD_enIN854IN854&oq=w3&aqs=chrome.3.69i57j69i59l2j0i67i433j0i67i131i433l2j46i67i199i433i465j0i67i131i433j0i433i512j0i67i131i433.6279j0j15&sourceid=chrome&ie=UTF-8')",time*1000));
+         {
+           document.getElementById("h2").style.color="green";
+           document.getElementById("b1").style.backgroundColor="lightgray";
+         }
+        }
+
+        //setInterval(Refresh,3000);
+    </script>
+</body>
+</html>
